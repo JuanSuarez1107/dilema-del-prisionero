@@ -1,0 +1,64 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+  }
+  
+  /* Contenedor principal */
+  #name-input, #game-area, #game-status {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px; /* Limit width for better view on larger screens */
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  /* Botones */
+  button {
+    width: 100%;
+    max-width: 300px;
+    padding: 15px;
+    font-size: 20px;
+    margin: 10px 0;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Estilo de los textos dentro de los contenedores */
+  h1, h2, h3, h4 {
+    margin: 10px 0;
+  }
+  
+  p {
+    font-size: 18px;
+  }
+  
+  /* Media queries para pantallas más pequeñas */
+  @media (max-width: 600px) {
+    button {
+      font-size: 18px;
+      padding: 12px;
+    }
+  
+    p {
+      font-size: 16px;
+    }
+  }
+  

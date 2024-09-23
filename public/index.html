@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dilema del Prisionero</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Dilema del Prisionero</h1>
+
+  <div id="name-input">
+    <select id="player-role">
+      <option value="jugador1">Jugador 1</option>
+      <option value="jugador2">Jugador 2</option>
+      <option value="espectador">Espectador</option>
+    </select>
+    <button id="join-game">Unirse al juego</button>
+  </div>
+
+  <div id="game-area" style="display:none;">
+    <h2>Realiza tu elección</h2>
+    <button id="cooperate-btn">Cooperar</button>
+    <button id="defect-btn">Traicionar</button>
+  </div>
+
+  <!-- Mueve la sección del estado del juego fuera del bloque exclusivo de espectadores -->
+  <div id="game-status" style="display:none;">
+    <h1>Estado del juego</h1>
+    <h2>Ambos jugadores deben elegir si cooperar o traicionar</h2>
+    <h3>Si ambos cooperan, será 1 año de cárcel para los dos. Si ambos traicionan, serán 2 años de cárcel.</h3>
+    <h4>Si uno traiciona y el otro coopera, el que traiciona será libre, mientras que el que coopera tendrá 3 años de cárcel.</h4>
+    <p>Resultado: <span id="game-result"></span></p>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
